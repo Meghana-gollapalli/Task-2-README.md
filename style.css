@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+}
+
+header {
+  background: #4e9414;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact Form */
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-section button {
+  background: #80ce19;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* To-Do List */
+.todo-section input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.todo-section button {
+  padding: 10px;
+  background: #5c9414;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+#todoList li {
+  padding: 10px;
+  margin-top: 5px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive Layout using Flexbox/Grid */
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+}
